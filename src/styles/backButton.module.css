@@ -1,0 +1,16 @@
+.backButton {
+    position: absolute; /* Position it absolutely */
+    top: 20px; /* Adjust the top alignment */
+    left: 20px; /* Adjust the left alignment */
+    background: transparent;
+    border: none;
+    color: #6b6b6b;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .backButton:hover {
+    color: #d3d3d3; /* Blue color on hover */
+  }
+  
