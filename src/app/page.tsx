@@ -1,12 +1,11 @@
 "use client";
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import dynamic from 'next/dynamic'; // Import dynamic
 import Image from 'next/image';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import WebFont from 'webfontloader';
 import styles from '../styles/Home.module.css';
 
 //eslint-disable react/no-unescaped-entities
@@ -21,14 +20,6 @@ export default function HomePage() {
   const router = useRouter();
 
   const [activeTab, setActiveTab] = useState('research');
-
-  useEffect(() => {
-    WebFont.load({
-      google: {
-        families: ['Space Grotesk:400,500,600,700'],
-      },
-    });
-  }, []);
 
   const handleSignUp = () => router.push('/signup');
   const openModal = () => setIsModalOpen(true);
